@@ -16,6 +16,7 @@ public class PostController {
         Post post = postService.findById(id)
                 .orElseThrow(() -> new RuntimeException("Post not found"));
         return post;
+
     }
 
 }
