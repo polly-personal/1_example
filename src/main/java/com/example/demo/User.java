@@ -5,14 +5,9 @@ import lombok.*;
 
 import javax.persistence.*;
 
-//@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-//@ToString
-//@Setter
 @AllArgsConstructor
-@EqualsAndHashCode
-@ToString
-@Setter
-@Getter
+@NoArgsConstructor
+@Data
 @Table(name = "authors")
 @Entity
 public class User {
@@ -27,13 +22,4 @@ public class User {
 
     @Column(name = "email")
     private String email;
-
-    public User() {
-    }
-
-    //    public User(Long id, String name, String email) {
-//        this.id = id;
-//        this.name = name;
-//        this.email = email;
-//    }
 }
